@@ -9,12 +9,12 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{210FFBBA-C26A-4F89-9C76-02105A4CE5DE}</ProjectGuid>
+    <ProjectGuid>{E1D62F91-F839-447C-BB25-8F7CECDB4663}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Dr.Song_Li_JSON_objects_in_jQuery_and_MVC</RootNamespace>
-    <AssemblyName>Dr.Song_Li-JSON_objects_in_jQuery_and_MVC</AssemblyName>
+    <RootNamespace>JsonMVC</RootNamespace>
+    <AssemblyName>JsonMVC</AssemblyName>
     <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <MvcBuildViews>false</MvcBuildViews>
     <UseIISExpress>true</UseIISExpress>
@@ -190,9 +190,9 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>56296</DevelopmentServerPort>
+          <DevelopmentServerPort>56336</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:56296/</IISUrl>
+          <IISUrl>http://localhost:56336/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

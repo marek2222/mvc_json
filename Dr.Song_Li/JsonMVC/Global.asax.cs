@@ -6,7 +6,7 @@ using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
 
-namespace Dr.Song_Li_JSON_objects_in_jQuery_and_MVC
+namespace JsonMVC
 {
   public class MvcApplication : System.Web.HttpApplication
   {

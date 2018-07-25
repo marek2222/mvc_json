@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
 
-namespace Dr.Song_Li_JSON_objects_in_jQuery_and_MVC
+namespace JsonMVC
 {
   public class RouteConfig
   {
