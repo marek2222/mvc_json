@@ -1,4 +1,5 @@
-﻿using System;
+﻿using JsonResultDemo.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -21,6 +22,38 @@ namespace JsonResultDemo.Controllers
 
       return Json(output, JsonRequestBehavior.AllowGet);
     }
+
+    /// <summary>   
+    /// Get the Users   
+    /// </summary>   
+    /// <returns></returns>   
+    private List<UserModel> GetUsers()
+    {
+      var usersList = new List<UserModel>
+            {
+                new UserModel
+                {
+                    UserId = 1,
+                    UserName = "Ram",
+                    Company = "Mindfire Solutions"
+                },
+                new UserModel
+                {
+                    UserId = 1,
+                    UserName = "chand",
+                    Company = "Mindfire Solutions"
+                },
+                new UserModel
+                {
+                    UserId = 1,
+                    UserName = "Abc",
+                    Company = "Abc Solutions"
+                }
+            };
+
+      return usersList;
+    }
+
 
   }
 }
