@@ -29,29 +29,19 @@ namespace JsonResultDemo.Controllers
     /// <returns></returns>   
     private List<UserModel> GetUsers()
     {
-      var usersList = new List<UserModel>
-            {
-                new UserModel
-                {
-                    UserId = 1,
-                    UserName = "Ram",
-                    Company = "Mindfire Solutions"
-                },
-                new UserModel
-                {
-                    UserId = 1,
-                    UserName = "chand",
-                    Company = "Mindfire Solutions"
-                },
-                new UserModel
-                {
-                    UserId = 1,
-                    UserName = "Abc",
-                    Company = "Abc Solutions"
-                }
+      var usersList = new List<UserModel> {
+                new UserModel { UserId = 1, UserName = "Ram",   Company = "Mindfire Solutions"  },
+                new UserModel { UserId = 1, UserName = "chand", Company = "Mindfire Solutions"},
+                new UserModel { UserId = 1, UserName = "Abc",   Company = "Abc Solutions"}
             };
-
       return usersList;
+    }
+
+
+    public JsonResult GetUsersData()
+    {
+      var users = GetUsers();
+      return Json(users, JsonRequestBehavior.AllowGet);
     }
 
 
