@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using System.Web.Script.Serialization;
 
 namespace JsonResultDemo.Controllers
 {
@@ -44,6 +45,18 @@ namespace JsonResultDemo.Controllers
       return Json(users, JsonRequestBehavior.AllowGet);
     }
 
+
+    public ActionResult Sample()
+    {
+      return View();
+    }
+
+    [HttpPost]
+    public JsonResult UpdateUserDetail(string usersJson) {
+      var js = new JavaScriptSerializer();
+      UserModel[] user = js.Deserialize<UserModel[]>(usersJson);
+      return Json("User Details are updated");
+    }
 
   }
 }
